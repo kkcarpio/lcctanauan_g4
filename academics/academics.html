@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LA CONSOLACION COLLEGE TANAUAN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #002858;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #1e73be;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .academics {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .academics h2 {
+            color: #002858;
+        }
+        .sub-menu {
+            margin-top: 10px;
+        }
+        .sub-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sub-menu ul li {
+            margin: 5px 0;
+        }
+        .accordion {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #1e73be;
+            background-color: #e7f1ff;
+            color: #1e73be;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .panel {
+            display: none;
+            padding: 10px;
+            border: 1px solid #1e73be;
+            border-radius: 5px;
+            margin-top: 5px;
+            background-color: #f9f9f9;
+        }
+        footer {
+            background-color: #002858;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function togglePanel(panelId) {
+            var panel = document.getElementById(panelId);
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>LA CONSOLACION COLLEGE TANAUAN</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#academics">Academics</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="academics" id="academics">
+        <h2>Academics</h2>
+        <div class="sub-menu">
+            <ul>
+                <li><a href="#early-childhood" onclick="togglePanel('earlyChildhoodPanel')">Early Childhood</a></li>
+                <li><a href="#lower-school" onclick="togglePanel('lowerSchoolPanel')">Lower School</a></li>
+                <li><a href="#middle-school" onclick="togglePanel('middleSchoolPanel')">Middle School</a></li>
+                <li><a href="#junior-high-school" onclick="togglePanel('juniorHighSchoolPanel')">Junior High School</a></li>
+                <li><a href="#senior-high-school" onclick="togglePanel('seniorHighSchoolPanel')">Senior High School</a></li>
+                <li><a href="#college" onclick="togglePanel('collegePanel')">College</a></li>
+            </ul>
+        </div>
+
+        <div id="earlyChildhoodPanel" class="panel">
+            <h3>Early Childhood</h3>
+            <p>Description of Early Childhood programs, focusing on foundational skills and development.</p>
+        </div>
+
+        <div id="lowerSchoolPanel" class="panel">
+            <h3>Lower School</h3>
+            <p>Description of Lower School programs, emphasizing basic education and social skills.</p>
+        </div>
+
+        <div id="middleSchoolPanel" class="panel">
+            <h3>Middle School</h3>
+            <p>Description of Middle School programs, including academic and extracurricular activities.</p>
+        </div>
+
+        <div id="juniorHighSchoolPanel" class="panel">
+            <h3>Junior High School</h3>
+            <p>Description of Junior High School programs, preparing students for higher education.</p>
+        </div>
+
+        <div id="seniorHighSchoolPanel" class="panel">
+            <h3>Senior High School</h3>
+            <p>Description of Senior High School programs, focusing on specialization and career readiness.</p>
+            <h4>Strands Offered:</h4>
+            <ul>
+                <li>Academic Strand</li>
+                <li>Technical-Vocational-Livelihood (TVL) Strand</li>
+                <li>Sports Strand</li>
+                <li>Arts and Design Strand</li>
+            </ul>
+        </div>
+
+        <div id="collegePanel" class="panel">
+            <h3>College</h3>
+            <p>Description of College programs, offering various degrees and professional courses.</p>
+            <h4>Courses Offered:</h4>
+            <ul>
+                <li>Bachelor of Science in Accountancy (BSA)</li>
+                <p>BSA is a four-year degree program that combines accounting, finance, and management. Students are trained to manage a company’s financial information and tax documents. This program can serve as a first step toward licensure as a Certified Public Accountant (CPA).</p>
+                <li>Bachelor of Science in Management Accounting (BSMA)</li>
+                <P>BSMA is a four-year degree program that combines accounting, finance, and management. BSMA is a profession that involves partnering in management decision-making, devising planning and performance management systems, and providing expertise in financial reporting and control to assist management in the formulation and implementation of an organization’s strategy.</P>
+                <li>Bachelor of Science in Business Administration (BSBA)</li>
+                <p>A four-year degree program that is designed to develop students comprehensive knowledge of marketing concepts to choose target markets and comprehensive skills in Human Resource Management.</p>
+                <li>Bachelor of Science in Psychology (BS PSYCH)</li>
+                <p>BS PSYCH is a four-year degree program that is designed to help students observe human behavior and its mental processes through the scientific method. The program offers broad scientific training with a concentration in Cognition and Cognitive Neuroscience; Developmental; Social; or Clinical and Behavioral Health.</p>
+                <li>Bachelor of Secondary Education (BSED)</li>
+                <li>Bachelor of Science in Information Technology (BSIT)</li>
+                <p>The BSIT program is an in-depth exposure to computer hardware and software technologies. It prepares the students to be IT professionals who are able to perform installation, operation, development, maintenance and administration of computer applications.</p>
+                <li>Bachelor of Elementary Education (BEED)</li>
+                <li>Bachelor of Secondary Education (BSED)</li>
+                <li>Bachelor of Science in Hospitality Management (BSHM)</li>
+                <li>Bachelor of Scienc ein Tourism Management (BSTM)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 La Consolacion College Tanauan. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+.sub-menu {
+    display: none; /* Initially hide submenus */
+    transition: max-height 0.3s ease-out; /* Smooth transition */
+    overflow: hidden; /* Prevent overflow */
+}
+.menu-item.active .sub-menu {
+    display: block; /* Show submenu when active */
+}
+.menu-item {
+    position: relative;
+}
+.menu-item a {
+    padding: 10px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+.menu-item a:hover {
+    background-color: #f0f0f0; /* Background on hover */
+}
