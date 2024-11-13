@@ -1,20 +1,106 @@
-.sub-menu {
-    display: none; /* Initially hide submenus */
-    transition: max-height 0.3s ease-out; /* Smooth transition */
-    overflow: hidden; /* Prevent overflow */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
-.menu-item.active .sub-menu {
-    display: block; /* Show submenu when active */
+
+header {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #eaeaea;
 }
-.menu-item {
+
+h1 {
+    color: #002858;
+    font-size: 24px;
+}
+
+h2 {
+    color: #1e73be;
+    font-size: 16px;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-links li {
     position: relative;
+    padding: 10px 20px;
 }
-.menu-item a {
-    padding: 10px;
-    display: block;
-    color: #333;
+
+.nav-links a {
+    color: #002858;
     text-decoration: none;
+    font-weight: 500;
 }
-.menu-item a:hover {
-    background-color: #f0f0f0; /* Background on hover */
+
+.nav-links a:hover {
+    color: #1e73be;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #002858;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #e7f1ff;
+}
+
+.nav-links li:hover .dropdown-content {
+    display: block;
+}
+
+/* Container Styles */
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.academics {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.academics h2 {
+    color: #002858;
+}
+
+footer {
+    text-align: center;
+    background-color: #002858;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
