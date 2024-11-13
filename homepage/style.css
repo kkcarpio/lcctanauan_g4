@@ -50,16 +50,6 @@ nav ul li a {
     color: #002858;
 }
 
-/* Panel Styles */
-.panel {
-    display: none;
-    padding: 10px;
-    border: 1px solid #1e73be;
-    border-radius: 5px;
-    margin-top: 5px;
-    background-color: #f9f9f9;
-}
-
 /* Footer Styles */
 footer {
     background-color: #002858;
