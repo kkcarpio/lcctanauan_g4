@@ -1,57 +1,107 @@
 /* General Styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('bg1.jpg'); /* Replace with your image path */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fallback color */
+    background-image: url('bg1.jpg'); /* Replace 'bg.jpg' with the correct path to your image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 40, 88, 0.9); /* Semi-transparent header */
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: rgba(0, 40, 88, 0.9); /* Semi-transparent background */
-    padding: 10px 0;
+    background-color: #1e73be;
+    padding: 10px;
 }
-
-.nav-links {
-    list-style: none;
-    margin: 0;
+nav ul {
+    list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
 }
-
-.nav-links li {
+nav ul li {
     margin: 0 15px;
 }
-
-.nav-links a {
-    text-decoration: none;
+nav ul li a {
     color: white;
+    text-decoration: none;
+    font-size: 18px;
     font-weight: bold;
-    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover {
+    background-color: #155a8a; /* Adds hover effect for the links */
+    border-radius: 5px;
 }
 
-.nav-links a:hover {
-    color: #1e73be; /* Light blue for hover effect */
-    text-decoration: underline;
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for readability */
+    border-radius: 5px;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Section */
+.about-us {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #002858;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Link Styles */
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1e73be;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.learn-more:hover {
+    background-color: #155a8a;
 }
 
 /* Image Section Styles */
 .image-section {
-    text-align: center;
+    width: 100%;
+    text-align: center; /* Center the image */
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 .event-image {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1200px; /* You can set a max-width to make the image responsive */
     height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
+    border-radius: 10px; /* Optional: adds rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow around the image */
 }
