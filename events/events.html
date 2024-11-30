@@ -4,26 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="events.css"> <!-- Link to external CSS file -->
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJX6vF7l9Hjq3Fk6seWLBhU4xJ5dG8VZUlOkWxj2bH6y5OFLITOB6zfpWwHf" crossorigin="anonymous">
+    
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="events.css"> 
 </head>
 <body>
+    <header>
+        <h1>LA CONSOLACION COLLEGE TANAUAN</h1>
+        <h2>The Premiere Catholic Educational Institution in the Region</h2>
+    </header>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="../homepage/index.html">Home</a></li> <!-- Corrected link -->
-                <li class="nav-item"><a class="nav-link" href="../academics/academics.html">Academics</a></li>
-                <li class="nav-item"><a class="nav-link" href="../admissions/admissions.html">Admissions</a></li>
-                <li class="nav-item"><a class="nav-link" href="../events/events.html">Upcoming Events & Activities</a></li>
-                <li class="nav-item"><a class="nav-link" href="../contactus/contactus.html">Contact Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="../forms/forms.html">Forms</a></li>
-            </ul>
+            <a class="navbar-brand" href="#">Logo</a> <!-- Optional logo link -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../homepage/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../academics/academics.html">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../admissions/admissions.html">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../events/events.html">Upcoming Events & Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contactus/contactus.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../forms/forms.html">Forms</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Image Section -->
     <section class="image-section">
-        <img src="event.jpg" alt="School Fair Event" class="event-image">
+        <img src="event.jpg" alt="School Fair Event" class="event-image img-fluid">
     </section>
+
+    <!-- Bootstrap JS (Optional, for functionality like dropdowns) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0gLq6G1awLM4r/SyVXr8pD3RAnlSdd/eR4/gocTda85po1xZ" crossorigin="anonymous"></script>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 La Consolacion College Tanauan. All rights reserved.</p>
+    </footer>
 </body>
 </html>
