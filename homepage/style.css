@@ -14,9 +14,9 @@ body {
 
 /* Header Section */
 header {
-    background-color: rgba(0, 40, 88, 0.9); /* Deep blue with transparency */
+    background-color: rgba(0, 40, 88, 0.9); 
     color: white;
-    padding: 30px;
+    padding: 20px 0; /* Reduced padding to bring text and nav closer */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     border-bottom: 4px solid #1e73be; /* Underline to make header stand out */
@@ -29,7 +29,7 @@ header h1 {
 }
 
 header h2 {
-    margin: 10px 0 0;
+    margin: 5px 0; /* Reduced margin to bring subtitle closer to the heading */
     font-size: 1.4em;
     font-weight: 400;
 }
@@ -37,7 +37,7 @@ header h2 {
 /* Navigation Menu */
 nav {
     background-color: #1e73be;
-    padding: 10px 0;
+    padding: 5px 0; /* Reduced padding to bring nav closer to the header */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow to navbar */
 }
 
@@ -50,7 +50,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px; /* Added more spacing for clarity */
+    margin: 0 15px; /* Reduced spacing for tighter nav items */
 }
 
 nav ul li a {
@@ -151,4 +151,3 @@ footer p {
         font-size: 1em;
     }
 }
-

@@ -3,31 +3,47 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Fallback color */
-    background-image: url('bg.jpg'); /* Replace 'bg.jpg' with the correct path to your image */
-    background-size: cover; /* Ensures the image covers the entire screen */
-    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-color: #f4f4f4;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Header Styles */
 header {
-    background-color: rgba(0, 40, 88, 0.9); /* Semi-transparent header */
+    background-color: rgba(0, 40, 88, 0.9);
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+}
+header img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+    height: auto;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+header h2 {
+    font-size: 1.5rem;
+    margin: 5px 0;
 }
 
 /* Navigation Bar */
 nav {
     background-color: #1e73be;
-    padding: 10px;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 nav ul li {
     margin: 0 15px;
@@ -35,26 +51,44 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+nav ul li a:hover {
+    color: #f0e68c;
 }
 
-/* Main Content */
-main {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for readability */
-    border-radius: 5px;
-    max-width: 900px;
+/* Admissions Section */
+section#admissions {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
     margin: 20px auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* About Us Section */
-.about-us {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+section#admissions h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+section#admissions p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+section#admissions .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #1e73be;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 900px;
+    transition: background-color 0.3s ease;
+}
+section#admissions .cta-button:hover {
+    background-color: #155a8a;
 }
 
 /* Footer Styles */
@@ -62,22 +96,59 @@ footer {
     background-color: #002858;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
 }
-
-/* Link Styles */
-.learn-more {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #1e73be;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
-.learn-more:hover {
-    background-color: #155a8a;
+
+/* Center Content */
+main, .about-us {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header h2 {
+        font-size: 1.2rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    section#admissions h2 {
+        font-size: 1.8rem;
+    }
+    section#admissions p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        max-width: 120px;
+    }
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+    section#admissions .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 }

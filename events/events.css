@@ -23,15 +23,18 @@ nav {
     background-color: #1e73be;
     padding: 10px;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
 }
+
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -40,6 +43,7 @@ nav ul li a {
     padding: 5px 10px;
     transition: background-color 0.3s;
 }
+
 nav ul li a:hover {
     background-color: #155a8a; /* Adds hover effect for the links */
     border-radius: 5px;
@@ -86,6 +90,7 @@ footer {
     text-decoration: none;
     border-radius: 5px;
 }
+
 .learn-more:hover {
     background-color: #155a8a;
 }
@@ -104,4 +109,29 @@ footer {
     height: auto;
     border-radius: 10px; /* Optional: adds rounded corners to the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow around the image */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em; /* Smaller font size for mobile */
+    }
+
+    header h2 {
+        font-size: 1.1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main, .about-us, .timeline {
+        padding: 20px;
+        margin: 15px auto;
+        font-size: 1em;
+    }
 }
