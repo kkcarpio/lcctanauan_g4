@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Consolacion College Tanauan is a Catholic educational institution offering academic programs from early childhood to college degree levels.">
+    <title>La Consolacion College Tanauan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJvN2tW+zTxKvDmp3YP1RAmf3GOVFjLRuT5GSCmZfv6p6ySYy6erxETizc5z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Remove any border or lines around the logo and text */
+        header {
+            background-color: 002858;
+            text-align: center;
+            padding: 5rem 0; /* Adjust padding to center the content nicely */
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        header h1,
+        header h2 {
+            color: white;
+            margin: 10px 0; /* Space between the heading elements */
+        }
+
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu {
+            display: none;
+        }
+
+        /* Styling for the dynamic content */
+        #dynamic-content {
+            margin-top: 20px;
+        }
+
+        /* Slider Container */
+        .slider-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            max-height: 500px; /* Adjust this for the appropriate height */
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            min-width: 100%;
+            transition: opacity 0.5s ease;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            max-height: 100%;
+            object-fit: cover; /* Ensures the image fills the space without distortion */
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 30px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Add styling for smaller screens */
+        @media (max-width: 768px) {
+            .slider-container {
+                max-height: 300px;
+            }
+
+            .prev, .next {
+                font-size: 20px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="La Consolacion College Tanauan Logo" class="mb-3">
+        <h1>LA CONSOLACION COLLEGE TANAUAN</h1>
+        <h2>The Premiere Catholic Educational Institution in the Region</h2>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- About Us Dropdown (Hover to Show) -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" id="history" onmouseover="showHistory()">History</a></li>
+                        <li><a class="dropdown-item" href="#" onmouseover="showMission()">Mission and Vision</a></li>
+                        <li><a class="dropdown-item" href="#" onmouseover="showTimeline()">Timeline</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="../academics/academics.html">Academics</a></li>
+                <li class="nav-item"><a class="nav-link" href="../admissions/admissions.html">Admissions</a></li>
+                <li class="nav-item"><a class="nav-link" href="../events/events.html">Upcoming Events & Activities</a></li>
+                <li class="nav-item"><a class="nav-link" href="../contactus/contactus.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="../forms/forms.html">Forms</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="bg1.png" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="bg2.png" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="bg3.png" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <img src="bg4.png" alt="Slide 4">
+                </div>
+                <div class="slide">
+                    <img src="bg5.png" alt="Slide 5">
+                </div>
+                <div class="slide">
+                    <img src="bg6.png" alt="Slide 6">
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+
+        <!-- Dynamic Content Section -->
+        <section id="dynamic-content">
+            <h3 id="dynamic-heading"></h3>
+            <p id="dynamic-description"></p>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 La Consolacion College Tanauan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Functions to change the content dynamically based on dropdown hover
+        function showHistory() {
+            document.getElementById("dynamic-heading").textContent = "History of La Consolacion College Tanauan";
+            document.getElementById("dynamic-description").innerHTML = "La Consolacion College Tanauan was established in 1948 with a mission to provide quality Catholic education. Over the years, it has grown to offer various academic programs and has become a hub of academic excellence in the region.";
+        }
+
+        function showMission() {
+            document.getElementById("dynamic-heading").textContent = "Mission and Vision";
+            document.getElementById("dynamic-description").innerHTML = "Our mission is to provide a transformative Catholic education that nurtures the intellectual, moral, and spiritual growth of our students, preparing them to become leaders in their respective fields. Our vision is to be a leading institution recognized for its academic excellence and commitment to character formation.";
+        }
+
+        function showTimeline() {
+            document.getElementById("dynamic-heading").textContent = "Timeline of La Consolacion College Tanauan";
+            document.getElementById("dynamic-description").innerHTML = "Our history is rich with milestones that have contributed to the growth of the institution. Key events include our establishment in 1948, our integration into the Unified La Consolacion College – South Luzon in 2015, and numerous academic achievements along the way.";
+        }
+
+        // Slider functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function moveSlide(step) {
+            currentSlide += step;
+            if (currentSlide >= slides.length) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+
+            document.querySelector('.slider').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        // Auto-slide functionality
+        setInterval(() => {
+            moveSlide(1); // Automatically move to the next slide every 5 seconds
+        }, 5000); // 5000ms = 5 seconds
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Improved font choice */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('bg.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: rgba(0, 40, 88, 0.9); 
+    color: white;
+    padding: 20px 0; /* Reduced padding to bring text and nav closer */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-bottom: 4px solid #1e73be; /* Underline to make header stand out */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em; /* Larger font for prominence */
+    font-weight: bold;
+}
+
+header h2 {
+    margin: 5px 0; /* Reduced margin to bring subtitle closer to the heading */
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #1e73be;
+    padding: 5px 0; /* Reduced padding to bring nav closer to the header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow to navbar */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Reduced spacing for tighter nav items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em; /* Slightly larger text */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffcb05; /* Highlight with a golden color on hover */
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly more opaque */
+    border-radius: 10px; /* Rounded corners for a smoother look */
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.2em; /* Increased text size for better readability */
+}
+
+/* About Us Section */
+.about-us {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 900px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Timeline Section */
+.timeline {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline .timeline-entry {
+    margin-bottom: 30px; /* Increased space between events */
+}
+
+.timeline h3 {
+    margin-bottom: 15px;
+    color: #1e73be;
+    font-size: 1.3em; /* Larger heading size for emphasis */
+    font-weight: bold;
+}
+
+/* Footer Section */
+footer {
+    background-color: #002858;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Shadow at top of footer */
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em; /* Smaller font size for mobile */
+    }
+
+    header h2 {
+        font-size: 1.1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main, .about-us, .timeline {
+        padding: 20px;
+        margin: 15px auto;
+        font-size: 1em;
+    }
+}
